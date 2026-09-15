@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Shopping Cart | Point Zero Signature Enterprise</title>
+
+    <link rel="stylesheet" href="../css/cart.css">
+</head>
+
+<body>
+
+    <div class="cart-page">
+
+        <div class="cart-header">
+            <h1>Shopping Cart</h1>
+            <h2>there user remove the fomer users items added to cart if there is any 👍 </h2>
+
+            <p>
+                Review your selected products before placing your order.
+            </p>
+        </div>
+  <a href="product.html">
+ <img src="arrow-small-left (1).png"
+        alt="" width="40px" height="30px">
+</a>
+ 
+
+        <div class="cart-layout">
+
+            <!-- PRODUCTS -->
+            <div class="cart-products">
+
+                <h2>Your Products</h2>
+
+                <div id="cartItems"></div>
+
+            </div>
+
+
+            <!-- ORDER SUMMARY -->
+            <div class="cart-summary">
+
+                <h2>Order Summary</h2>
+
+
+                <div class="summary-item">
+
+                    <span>Total Products</span>
+
+                    <span id="totalItems">0</span>
+
+                </div>
+
+
+                <div class="summary-item">
+
+                    <span>Total Amount</span>
+
+                    <span id="totalPrice">₦0</span>
+
+                </div>
+
+
+                <hr>
+
+
+                <h3>Customer Details</h3>
+
+
+                <input
+                    type="text"
+                    id="customerName"
+                    placeholder="Full Name"
+                >
+
+
+                <input
+                    type="tel"
+                    id="customerPhone"
+                    placeholder="Phone Number"
+                >
+
+
+                <textarea
+                    id="customerAddress"
+                    placeholder="Delivery Address"
+                ></textarea>
+
+
+                <button
+                    type="button"
+                    class="whatsapp-btn"
+                    onclick="sendOrder()">
+
+                    Order Through WhatsApp
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- IMPORTANT:
+         Change "javascrpt" to "javascript"
+         if your folder is called javascript.
+    -->
+
+    <script src="../javascrpt/cart.js"></script>
+
+</body>
+
+</html>

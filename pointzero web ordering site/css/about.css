@@ -1,0 +1,285 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    background:#f8fafc;
+    color:#1e293b;
+    line-height:1.7;
+}
+
+/* HERO */
+
+.hero{
+    height:90vh;
+    background:
+    linear-gradient(
+    rgba(0,0,0,0.6),
+    rgba(0,0,0,0.6)),
+    url("https://images.unsplash.com/photo-1553413077-190dd305871c?w=1600");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+    padding:20px;
+}
+
+.hero-content h1{
+    font-size:4rem;
+    margin-bottom:20px;
+}
+
+.hero-content p{
+    font-size:1.3rem;
+    max-width:800px;
+    margin:auto;
+}
+
+/* STORY */
+
+.story{
+    display:flex;
+    align-items:center;
+    gap:50px;
+    padding:80px 10%;
+    background:white;
+}
+
+.story-image{
+    flex:1;
+}
+
+.story-image img{
+    width:100%;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.15);
+}
+
+.story-text{
+    flex:1;
+}
+
+.story-text h2{
+    font-size:2.5rem;
+    margin-bottom:20px;
+    color:#0f172a;
+}
+
+.story-text p{
+    margin-bottom:15px;
+    font-size:1.1rem;
+}
+
+/* MISSION & VISION */
+
+.mission-vision{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:30px;
+    padding:80px 10%;
+    background:#e2e8f0;
+}
+
+.box{
+    background:white;
+    padding:40px;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.08);
+    transition:0.4s;
+}
+
+.box:hover{
+    transform:translateY(-10px);
+}
+
+.box h2{
+    margin-bottom:20px;
+    color:#2563eb;
+}
+
+/* STATS */
+
+.stats{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:25px;
+    padding:80px 10%;
+    background:white;
+}
+
+.stat-card{
+    background:#0f172a;
+    color:white;
+    text-align:center;
+    padding:40px;
+    border-radius:20px;
+}
+
+.stat-card h1{
+    font-size:3rem;
+    color:#22c55e;
+}
+
+.stat-card p{
+    margin-top:10px;
+}
+
+/* GALLERY */
+
+.gallery{
+    padding:80px 10%;
+    background:#f1f5f9;
+}
+
+.gallery h2{
+    text-align:center;
+    font-size:2.5rem;
+    margin-bottom:40px;
+}
+
+.gallery-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
+}
+
+.gallery-grid img{
+    width:100%;
+    height:320px;
+    object-fit:cover;
+    border-radius:20px;
+    transition:0.4s;
+}
+
+.gallery-grid img:hover{
+    transform:scale(1.03);
+}
+
+/* TEAM */
+
+.team{
+    padding:80px 10%;
+    background:white;
+}
+
+.team h2{
+    text-align:center;
+    margin-bottom:50px;
+    font-size:2.5rem;
+}
+
+.team-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+}
+
+.member{
+    text-align:center;
+    background:#f8fafc;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.08);
+}
+
+.member img{
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    object-fit:cover;
+    margin-bottom:20px;
+}
+
+.member h3{
+    color:#0f172a;
+    margin-bottom:10px;
+}
+
+.member p{
+    color:#64748b;
+}
+
+/* FOOTER */
+
+footer{
+    background:#0f172a;
+    color:white;
+    text-align:center;
+    padding:50px 20px;
+}
+
+footer h2{
+    margin-bottom:15px;
+}
+
+footer p{
+    margin:10px 0;
+}
+
+/* TABLET */
+
+@media(max-width:900px){
+
+    .story{
+        flex-direction:column;
+    }
+
+    .mission-vision{
+        grid-template-columns:1fr;
+    }
+
+    .stats{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .team-grid{
+        grid-template-columns:1fr;
+    }
+
+    .gallery-grid{
+        grid-template-columns:1fr;
+    }
+
+    .hero-content h1{
+        font-size:3rem;
+    }
+}
+
+/* MOBILE */
+
+@media(max-width:600px){
+
+    .hero{
+        height:70vh;
+    }
+
+    .hero-content h1{
+        font-size:2.2rem;
+    }
+
+    .hero-content p{
+        font-size:1rem;
+    }
+
+    .stats{
+        grid-template-columns:1fr;
+    }
+
+    .story,
+    .mission-vision,
+    .stats,
+    .gallery,
+    .team{
+        padding:50px 20px;
+    }
+
+    .gallery-grid img{
+        height:220px;
+    }
+}

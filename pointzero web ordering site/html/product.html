@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Products | Point Zero Signature Enterprise</title>
+
+    <link rel="stylesheet" href="../css/product.css">
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Segoe UI", sans-serif;
+        }
+
+        body {
+            background: #f5f7fa;
+            color: #0f172a;
+        }
+
+        /* HEADER */
+
+        header {
+            background: #0f172a;
+            color: white;
+            padding: 25px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 38px;
+            margin-bottom: 8px;
+        }
+
+        header p {
+            color: #cbd5e1;
+            font-size: 17px;
+        }
+
+        /* BACK BUTTON */
+
+        .back-link {
+            display: inline-block;
+            margin: 20px;
+        }
+
+        .back-link img {
+            width: 40px;
+            height: 30px;
+            object-fit: contain;
+        }
+
+        /* SEARCH */
+
+        .search-box {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .search-box input {
+            width: 90%;
+            max-width: 600px;
+            padding: 15px 20px;
+            border-radius: 10px;
+            border: 1px solid #cbd5e1;
+            font-size: 16px;
+            outline: none;
+        }
+
+        .search-box input:focus {
+            border-color: #22c55e;
+        }
+
+        /* CATEGORY */
+
+        .category-title {
+            padding: 30px 20px 10px;
+            font-size: 32px;
+            color: #0f172a;
+        }
+
+        /* PRODUCTS */
+
+        .products {
+            display: grid;
+            grid-template-columns:
+                repeat(auto-fit, minmax(250px, 1fr));
+
+            gap: 25px;
+            padding: 20px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 18px;
+            overflow: hidden;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-7px);
+        }
+
+        .card img {
+            width: 100%;
+            height: 230px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .card-content {
+            padding: 20px;
+        }
+
+        .card h3 {
+            margin-bottom: 10px;
+            font-size: 21px;
+        }
+
+        .price {
+            color: #22c55e;
+            font-size: 19px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .card button {
+            width: 100%;
+            padding: 13px;
+            background: #22c55e;
+            border: none;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 9px;
+            font-size: 15px;
+            transition: 0.3s;
+        }
+
+        .card button:hover {
+            background: #16a34a;
+        }
+
+        /* CART BUTTON */
+
+        .cart-link {
+            position: fixed;
+            right: 25px;
+            bottom: 25px;
+            background: #0f172a;
+            color: white;
+            padding: 15px 22px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+        }
+
+        .cart-link:hover {
+            background: #1e293b;
+        }
+
+        /* MOBILE */
+
+        @media (max-width: 600px) {
+
+            header h1 {
+                font-size: 27px;
+            }
+
+            .category-title {
+                font-size: 26px;
+            }
+
+            .card img {
+                height: 210px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <header>
+
+        <h1>Point Zero Signature Enterprise</h1>
+
+        <p>
+            Premium Batteries, Wines, Drinks & Bottled Water
+        </p>
+        <h2>
+  ❤ we sell in retail and in wholesale everything you see here are exaples choose what you want when you order on WhatsApp 👏
+        </h2>
+
+      
+
+    </header>
+
+
+    <!-- BACK BUTTON -->
+
+    <a href="../index.html" class="back-link">
+
+        <img
+            src="arrow-small-left (1).png"
+            alt="Back">
+
+    </a>
+
+
+    <!-- SEARCH -->
+
+    <div class="search-box">
+
+        <input
+            type="text"
+            id="search"
+            placeholder="Search Products..."
+            onkeyup="searchProducts()">
+
+    </div>
+
+
+    <!-- =============================== -->
+    <!-- CAR BATTERIES -->
+    <!-- =============================== -->
+
+    <h2 class="category-title">
+        Car Batteries
+    </h2>
+
+
+    <div class="products">
+
+
+        <!-- CRYSTAL -->
+
+        <div class="card">
+
+            <img
+                src="b2cbe62b-1532-45bd-83f7-fff2b50a8198-1_all_526.jpg"
+                alt="Crystal Battery">
+
+            <div class="card-content">
+
+                <h3>
+                    Solar paniels
+                </h3>
+
+                <p class="price">
+                    On Request
+                </p>
+
+                <button
+                    type="button"
+                    onclick="addToCart(
+                        ' Solar paniels',
+                        85000,
+                        this
+                    )">
+
+                    Add To Cart
+
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- KING LION -->
+
+        <div class="card">
+
+            <img
+                src="b2cbe62b-1532-45bd-83f7-fff2b50a8198-1_all_456.jpg"
+                alt="King Lion Battery">
+
+            <div class="card-content">
+
+                <h3>
+                car batteries
+                </h3>
+
+                <p class="price">
+                    On Request
+                </p>
+
+                <button
+                    type="button"
+                    onclick="addToCart(
+                        'car Battery',
+                        85000,
+                        this
+                    )">
+
+                    Add To Cart
+
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- SOLAR BATTERY -->
+
+        <div class="card">
+
+            <img
+                src="b2cbe62b-1532-45bd-83f7-fff2b50a8198-1_all_635.jpg"
+                alt="Solar Battery">
+
+            <div class="card-content">
+
+                <h3>
+                    Solar Battery
+                </h3>
+
+                <p class="price">
+                    On Request
+                </p>
+
+                <button
+                    type="button"
+                    onclick="addToCart(
+                        'Solar Battery',
+                        150000,
+                        this
+                    )">
+
+                    Add To Cart
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- =============================== -->
+    <!-- WINES -->
+    <!-- =============================== -->
+
+    <h2 class="category-title">
+        Wines
+    </h2>
+
+
+    <div class="products">
+
+
+        <!-- GIACOBAZZI -->
+
+        <div class="card">
+
+            <img
+                src="142856.jpg"
+                alt="Giacobazzi Wine">
+
+            <div class="card-content">
+
+                <h3>
+                    Giacobazzi
+                </h3>
+
+                <p class="price">
+                    On Request
+                </p>
+
+                <button
+                    type="button"
+                    onclick="addToCart(
+                        'wines',
+                        7500,
+                        this
+                    )">
+
+                    Add To Cart
+
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- BOAZZ -->
+
+        <div class="card">
+
+            <img
+                src="102967.jpg"
+                alt="Boazz Wine">
+
+            <div class="card-content">
+
+                <h3>
+                    Boazz
+                </h3>
+
+                <p class="price">
+                    On Request
+                </p>
+
+                <button
+                    type="button"
+                    onclick="addToCart(
+                        'wines',
+                        10000,
+                        this
+                    )">
+
+                    Add To Cart
+
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- BARON DE ROUBI -->
+
+        <div class="card">
+
+            <img
+                src="146774 (1).jpg"
+                alt="Baron De Roubi">
+
+            <div class="card-content">
+
+                <h3>
+                    wines
+                </h3>
+
+                <p class="price">
+                    On Request
+                </p>
+
+                <button
+                    type="button"
+                    onclick="addToCart(
+                        'wines',
+                        10000,
+                        this
+                    )">
+
+                    Add To Cart
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- =============================== -->
+    <!-- SOFT DRINKS -->
+    <!-- =============================== -->
+
+    <h2 class="category-title">
+        Soft Drinks
+    </h2>
+
+
+    <div class="products">
+
+
+        <!-- COCA COLA -->
+
+        <div class="card">
+
+            <img
+                src="https://images.pexels.com/photos/4113682/pexels-photo-4113682.jpeg"
+                alt="Coca Cola">
+
+            <div class="card-content">
+
+                <h3>
+                    Coca Cola
+                </h3>
+
+                <p class="price">
+                    On Request
+                </p>
+
+                <button
+                    type="button"
+                    onclick="addToCart(
+                        'soft drinks',
+                        500,
+                        this
+                    )">
+
+                    Add To Cart
+
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- FANTA -->
+
+        <div class="card">
+
+            <img
+                src="https://images.pexels.com/photos/2775860/pexels-photo-2775860.jpeg"
+                alt="Fanta">
+
+            <div class="card-content">
+
+                <h3>
+                    Soft drinks
+                </h3>
+
+                <p class="price">
+                    On Request
+                </p>
+
+                <button
+                    type="button"
+                    onclick="addToCart(
+                        'Fanta',
+                        500,
+                        this
+                    )">
+
+                    Add To Cart
+
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- SOURSOP -->
+
+        <div class="card">
+
+            <img
+                src="434058.jpg"
+                alt="Soursop Drink">
+
+            <div class="card-content">
+
+                <h3>
+                    Soft drinks
+                </h3>
+
+                <p class="price">
+                    On Request
+                </p>
+
+                <button
+                    type="button"
+                    onclick="addToCart(
+                        'soft Drinks',
+                        250000,
+                        this
+                    )">
+
+                    Add To Cart
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- =============================== -->
+    <!-- BOTTLED WATER -->
+    <!-- =============================== -->
+
+    <h2 class="category-title">
+        Bottled Water
+    </h2>
+
+
+    <div class="products">
+
+
+        <!-- KP WATER -->
+
+        <div class="card">
+
+            <img
+                src="142144.jpg"
+                alt="KP Bottled Water">
+
+            <div class="card-content">
+
+                <h3>
+                     Bottled Water
+                </h3>
+
+                <p class="price">
+                    On Request
+                </p>
+
+                <button
+                    type="button"
+                    onclick="addToCart(
+                        ' Bottled Water',
+                        400,
+                        this
+                    )">
+
+                    Add To Cart
+
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- AQUARENA -->
+
+        <div class="card">
+
+            <img
+                src="142154.jpg"
+                alt="Aquarena">
+
+            <div class="card-content">
+
+                <h3>
+                    bottled water
+                </h3>
+
+                <p class="price">
+                    On Request
+                </p>
+
+                <button
+                    type="button"
+                    onclick="addToCart(
+                        ' bottled water',
+                        400,
+                        this
+                    )">
+
+                    Add To Cart
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- VIEW CART -->
+
+    <a
+        href="cart.html"
+        class="cart-link">
+
+        🛒 View Cart
+
+    </a>
+
+
+    <!-- =============================== -->
+    <!-- JAVASCRIPT -->
+    <!-- =============================== -->
+
+    <script>
+
+function addToCart(name, price, button) {
+
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+    // Get the product card
+    const card = button.closest(".card");
+
+    // Get the image inside the card
+    const image = card.querySelector("img");
+
+    // Convert image path to a complete URL
+    const imageURL = new URL(
+        image.getAttribute("src"),
+        window.location.href
+    ).href;
+
+    // Check if product already exists
+    const existingProduct = cart.find(item => item.name === name);
+
+    if (existingProduct) {
+
+        existingProduct.quantity =
+            (Number(existingProduct.quantity) || 1) + 1;
+
+        existingProduct.image = imageURL;
+
+    } else {
+
+        cart.push({
+            name: name,
+            price: Number(price),
+            image: imageURL,
+            quantity: 1
+        });
+
+    }
+
+    localStorage.setItem("cart", JSON.stringify(cart));
+
+    alert(name + " added to cart!");
+}
+
+
+function addToCart(name, price, button) {
+
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+    // Get the product card
+    const card = button.closest(".card");
+
+    // Get the image inside the card
+    const image = card.querySelector("img");
+
+    // Convert image path to a complete URL
+    const imageURL = new URL(
+        image.getAttribute("src"),
+        window.location.href
+    ).href;
+
+    // Check if product already exists
+    const existingProduct = cart.find(item => item.name === name);
+
+    if (existingProduct) {
+
+        existingProduct.quantity =
+            (Number(existingProduct.quantity) || 1) + 1;
+
+        existingProduct.image = imageURL;
+
+    } else {
+
+        cart.push({
+            name: name,
+            price: Number(price),
+            image: imageURL,
+            quantity: 1
+        });
+
+    }
+
+    localStorage.setItem("cart", JSON.stringify(cart));
+
+    alert(name + " added to cart!");
+}
+
+
+
+
+        // =====================================
+        // SEARCH PRODUCTS
+        // =====================================
+
+        function searchProducts() {
+
+            const input =
+                document
+                .getElementById("search")
+                .value
+                .toLowerCase()
+                .trim();
+
+
+            const cards =
+                document.querySelectorAll(".card");
+
+
+            cards.forEach(card => {
+
+                const text =
+                    card.innerText
+                    .toLowerCase();
+
+
+                if (
+                    text.includes(input)
+                ) {
+
+                    card.style.display =
+                        "block";
+
+                }
+
+                else {
+
+                    card.style.display =
+                        "none";
+
+                }
+
+            });
+
+        }
+
+    </script>
+
+</body>
+</html>
